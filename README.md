@@ -39,7 +39,7 @@ pipeline {
     }
 }
 ```
-- Add a GitHub workflow (from your repository page click on "Actions", then "New Workflow", then "setup a workflow yourself") that adds a link to the Jenkins job page on the PR. Just copy the one in `.github/workflows/pr_build_link.yml` on this repository.
+- **(This is currently broken: it doesn't work from forks, see https://github.community/t5/GitHub-Actions/Github-Workflow-not-running-from-pull-request-from-forked/td-p/32979/highlight/true )** Add a GitHub workflow (from your repository page click on "Actions", then "New Workflow", then "setup a workflow yourself") that adds a link to the Jenkins job page on the PR. Just copy the one in `.github/workflows/pr_build_link.yml` on this repository.
 - From your repository page - Settings - Webhooks, add a webhook:
   - Payload URL: `https://jenkins-mch.cscs.ch/github-webhook/`
   - Content type: `application/json`
